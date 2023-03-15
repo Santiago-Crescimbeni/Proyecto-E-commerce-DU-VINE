@@ -12,14 +12,14 @@ RESUMEN DE TECNOLOGÍAS Y CONOCIMIENTOS IMPLEMENTADO SOBRE ESTE PROYECTO:
 -Responsive
 -UX/UI
 -JavaScript
-- Consultas a API
+-Consultas a API
 -Rest APIs
 -Validaciones
 -Almacenamiento y utilización en Storage
 -JWT
 -JSON
 -Git / GitHub
-- Metodología Scrum
+-Metodología Scrum
 -Kanban
 
 
