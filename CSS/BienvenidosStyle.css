@@ -1,0 +1,338 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@100&display=swap");
+:root {
+  --burbuja-ancho: 64px;
+  --burbuja-icono-ancho: 32px;
+  --burbuja-whastapp: #25D366;
+  --burbuja-color: #fff;
+  --burbuja-sombra: rgba(0, 0, 0, 0.1);
+  --burbuja-inactivo: #ff0000;
+  --chat-ancho: 360px;
+  --chat-sombra: rgba(0, 0, 0, 0.1);
+  --chat-cabecera: #095E54;
+  --chat-cabecera-texto: #fff;
+  --chat-cabecera-activo: #4AD504;
+  --chat-avatar-ancho: 52px;
+  --chat-cuerpo-texto: #111;
+  --chat-cuerpo-texto-operador: rgba(0, 0, 0, 0.4);
+  --chat-cuerpo-hora: rgba(17, 17, 17, 0.5);
+  --chat-cuerpo-fondo: rgba(230, 221, 212, 0.85);
+  --chat-cuerpo-dialogo: #fff;
+  --chat-cuerpo-dialogo-nombre: rgba(0, 0, 0, 0.4);
+  --chat-pie: #fff;
+  --chat-boton: #4fce5d;
+  --chat-boton-texto: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-image: url(../IMA/BACKGROUND/closeup-shot-of-green-grape-leaves-with-beautiful-green-landscape\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+* body header div.cabezera {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+* body header div.cabezera h2 {
+  color: #FFFFFF;
+  font-family: "Caveat", sans-serif;
+  font-size: 70px;
+  cursor: pointer;
+}
+* body header div.cabezera h2:hover {
+  color: #CE8619;
+  transition: 600ms;
+  font-size: 68px;
+}
+* body header div.cabezera form .contenedor-de-búsqueda {
+  position: relative;
+  width: 30vw;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 30px;
+  border: none;
+}
+* body header div.cabezera form .contenedor-de-búsqueda input {
+  font-size: 16px;
+  border: #FFFFFF solid 1px;
+  border-radius: 30px;
+  padding: 0 12px 0 42px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+* body header div.cabezera form .contenedor-de-búsqueda ::-moz-placeholder {
+  color: #FFFFFF;
+}
+* body header div.cabezera form .contenedor-de-búsqueda ::placeholder {
+  color: #FFFFFF;
+}
+* body header div.cabezera form .contenedor-de-búsqueda i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+}
+* body header div.cabezera p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+}
+* body header div.cabezera .Usuario {
+  display: flex;
+}
+* body header div.cabezera .iconos {
+  margin: 0px 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+* body header div.cabezera .iconos:hover {
+  color: #CE8619;
+  transition: 600ms;
+}
+* body header div.cabezera .fa-bars {
+  display: none;
+}
+* body header div.cabezera .fa-house {
+  display: none;
+}
+* body header div.cabezera .fa-location-dot {
+  display: none;
+}
+* body header div.cabezera .fa-bottle-droplet {
+  display: none;
+}
+@media (max-width: 480px) {
+  * body header div.cabezera {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+  }
+  * body header div.cabezera h2 {
+    color: red;
+    font-family: "Caveat", sans-serif;
+    font-size: 10px;
+    margin-right: 50%;
+  }
+  * body header div.cabezera h2:hover {
+    color: #CE8619;
+    transition: 600ms;
+    font-size: 68px;
+  }
+  * body header div.cabezera form {
+    display: none;
+  }
+  * body header div.cabezera form div.contenedor-de-búsqueda {
+    display: flex;
+  }
+  * body header div.cabezera form div.contenedor-de-búsqueda i {
+    display: flex;
+  }
+  * body header div.cabezera p {
+    display: flex;
+    visibility: hidden;
+  }
+  * body header div.cabezera .Usuario {
+    display: flex;
+  }
+  * body header div.cabezera .Usuario .iconos {
+    display: flex;
+    position: relative;
+    visibility: hidden;
+  }
+  * body header div.cabezera .Usuario .fa-bars {
+    display: flex;
+    position: absolute;
+    font-size: 40px;
+    z-index: 1;
+    left: 75%;
+    top: 5%;
+    color: #FFFFFF;
+  }
+  * body header div.cabezera .Usuario .fa-bars .fa-bars:hover {
+    color: #CE8619;
+    transition: 2s;
+    align-self: center;
+  }
+  * body header .headerFondoNegro {
+    transition: 3s;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  * body header div.cabezera {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+  }
+  * body header div.cabezera h2 {
+    position: absolute;
+    color: #FFFFFF;
+    font-family: "Caveat", sans-serif;
+    font-size: 50px;
+  }
+  * body header div.cabezera h2:hover {
+    color: #CE8619;
+    transition: 600ms;
+    font-size: 68px;
+  }
+  * body header div.cabezera .nuevop {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    z-index: 1;
+    margin-top: 70%;
+    margin-bottom: 5%;
+    visibility: visible;
+    transition: 0.5s;
+    text-align: center;
+  }
+  * body header div.cabezera .nuevoUsuario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80%;
+    margin-left: 55%;
+    background: linear-gradient(rgb(127, 69, 14), rgb(192, 100, 14), rgba(244, 122, 8, 0.703));
+    padding: 100px 35px 40px 35px;
+    z-index: 1;
+    border-radius: 0px 0px 30px 30px;
+    transition: 0.5s alternate;
+  }
+  * body header div.cabezera .nuevoUsuario .nuevoiconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45%;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 1;
+    visibility: visible;
+    transition: 0.5s;
+    font-size: large;
+  }
+  * body header div.cabezera .nuevoUsuario .fa-bars {
+    display: flex;
+    font-size: xx-large;
+    top: 7%;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  * body header div.cabezera .nuevoUsuario .fa-bars .fa-bars:hover {
+    color: #CE8619;
+    transition: 2s;
+  }
+}
+* body main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+* body main h1 {
+  background-color: rgba(0, 0, 0, 0.4117647059);
+  border: 0.5px solid white;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 100;
+  font-size: 35px;
+  padding: 1.7%;
+  cursor: none;
+}
+* body main .botones {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin: 12.5%;
+}
+* body main .botones button {
+  font-family: "Cormorant Infant", serif;
+  color: #FFFFFF;
+  font-size: 33px;
+  background-color: rgba(0, 0, 0, 0.4117647059);
+  padding: 20px 30px;
+  border-radius: 70px;
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+* body main .botones button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: #CE8619;
+  transition: 600ms;
+}
+* body footer div {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #CE8619;
+}
+* body footer div a {
+  width: 5%;
+}
+* body footer div a i {
+  font-size: xx-large;
+  margin: 10px 5px;
+  color: #FFFFFF;
+}
+* body footer div a i:hover {
+  color: #000000;
+  transition: 600ms;
+}
+@media (max-width: 480px) {
+  * body footer div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #CE8619;
+  }
+  * body footer div a {
+    width: 70px;
+  }
+  * body footer div a i {
+    font-size: xx-large;
+    margin: 10px 5px;
+    color: #FFFFFF;
+  }
+  * body footer div a i:hover {
+    color: #000000;
+    transition: 600ms;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body main h1 {
+    font-size: 35px;
+    padding: 1.7%;
+    cursor: none;
+  }
+  body main .botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10vh 0 30vh 0;
+  }
+  body main .botones button {
+    align-content: center;
+    align-self: center;
+    font-size: 33px;
+    padding: 20px 30px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=BienvenidosStyle.css.map */
