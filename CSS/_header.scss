@@ -1,0 +1,231 @@
+div.cabezera {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    h2 {
+        color: $blanco;
+        font-family: $font-C;
+        font-size: 70px;
+        cursor: pointer;
+      }
+      h2:hover {
+        color: $amarillo;
+        transition: 600ms;
+        font-size: 68px;
+      }
+form {                  
+.contenedor-de-búsqueda {
+position: relative;
+width: 30vw;
+height: 40px;
+border: 1px solid black;
+border-radius: 30px;
+border: none;
+
+input{
+font-size: 16px;
+border: $blanco solid 1px;
+border-radius: 30px;
+padding: 0 12px 0 42px;
+background-color: transparent;  
+width: 100%;
+height: 100%;   
+}
+
+::placeholder {
+color: $blanco; 
+}
+i{
+position: absolute;
+top: 50%;
+left: 10px;
+transform: translateY(-50%);
+width: 20px;
+height: 20px;
+color: $blanco;
+}
+}
+}
+p{
+font-size: 20px;
+font-family: $font-B;
+color: $blanco;
+}
+.Usuario {
+display: flex;
+
+}
+.iconos {
+margin: 0px 10px;
+color: $blanco;
+cursor: pointer;
+}
+
+.iconos:hover {
+color: $amarillo;
+transition: 600ms;
+}
+.fa-bars{
+display: none;
+}
+.fa-house{
+display: none;
+}
+.fa-location-dot{
+display: none;
+}
+.fa-bottle-droplet{
+display: none;
+}
+
+}
+
+//--------------Responsive--------------
+
+@media (max-width: 480px){
+
+
+div.cabezera {
+display: flex;   
+flex-direction: column;
+height: 10vh;
+
+h2 {
+color: red;
+font-family: $font-C;
+font-size: 10px;
+margin-right: 50%;
+
+
+}
+h2:hover {
+color: $amarillo;
+transition: 600ms;
+font-size: 68px;
+}
+form { 
+display: none;
+div.contenedor-de-búsqueda{
+display: flex;
+i {
+display: flex;
+}
+}
+}
+p {
+display: flex;
+visibility: hidden;
+}
+.Usuario {
+display: flex;  
+
+.iconos {
+display: flex;
+position: relative;
+visibility: hidden;
+
+
+}
+
+.fa-bars{
+display: flex;
+position: absolute;
+font-size: 40px;
+z-index: 1;
+left: 75%;
+top: 5%;
+color: $blanco;
+
+
+.fa-bars:hover{
+color: $amarillo;
+transition: 2s;
+align-self: center;
+
+} 
+}
+}
+}
+//----------------------Renderizado Hamburguesa------------------------
+
+.headerFondoNegro{
+transition: 3s;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.cabezera {
+display: flex;   
+flex-direction: column;
+height: 15vh;  
+
+
+h2 {
+position: absolute;
+color: $blanco;
+font-family: $font-C;
+font-size: 50px;
+}
+h2:hover {
+color: $amarillo;
+transition: 600ms;
+font-size: 68px;
+}
+
+.nuevop {
+font-size: 20px;
+font-family: $font-B;
+color: $blanco;
+z-index: 1;
+margin-top: 70%;
+margin-bottom: 5%;
+visibility: visible;
+transition: 0.5s;
+text-align: center;
+}
+.nuevoUsuario {
+display: flex;
+flex-direction: column;
+margin-top: 80%;
+margin-left: 55%;
+background: linear-gradient(
+rgb(127, 69, 14),
+rgb(192, 100, 14),
+rgba(244, 122, 8, 0.703)
+);
+padding: 100px 35px 40px 35px;
+z-index: 1;
+border-radius: 0px 0px 30px 30px;
+transition: 0.5s  alternate ;
+
+.nuevoiconos {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 45%;
+color: $blanco;
+cursor: pointer;
+z-index: 1;      
+visibility: visible;
+transition: 0.5s;
+font-size: large;
+
+}
+
+.fa-bars{
+display: flex;
+font-size: xx-large;
+top: 7%;    
+z-index: 1;        
+transition: 0.5s;
+
+
+
+.fa-bars:hover{
+color: $amarillo;
+transition: 2s;
+} 
+}
+}
+}
+}
