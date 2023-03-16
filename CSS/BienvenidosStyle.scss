@@ -1,0 +1,89 @@
+@import "colores.scss";
+@import "fuentes.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  body {
+    background-image: url(../IMA/BACKGROUND/closeup-shot-of-green-grape-leaves-with-beautiful-green-landscape\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    header {
+      @import "header.scss";
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      h1 {
+        background-color: $negro-agua;
+        border: 0.5px solid white;
+        color: $blanco;
+        text-align: center;
+        font-family: $font-A;
+        font-weight: 100;
+        font-size: 35px;
+        padding: 1.7%;
+
+        cursor: none;
+      }
+      .botones {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin: 12.5%;
+
+        button {
+          font-family: $font-A;
+          color: $blanco;
+          font-size: 33px;
+          background-color: $negro-agua;
+          padding: 20px 30px;
+
+          border-radius: 70px;
+          border-color: $blanco;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: rgba($color: $negro, $alpha: 0.9);
+          border-color: $amarillo;
+          transition: 600ms;
+        }
+      }
+    }
+    footer {
+      @import "footer.scss";
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    main {
+      h1 {
+        font-size: 35px;
+        padding: 1.7%;
+
+        cursor: none;
+      }
+      .botones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 10vh 0 30vh 0;
+
+        button {
+          align-content: center;
+          align-self: center;
+          font-size: 33px;
+          padding: 20px 30px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
