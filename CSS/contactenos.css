@@ -31,31 +31,24 @@
   margin: 0;
   padding: 0;
 }
-* body {
-  background-image: url(../IMA/BACKGROUND/closeup-shot-of-green-grape-leaves-with-beautiful-green-landscape\ 1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  height: 100vh;
-}
-* body header div.cabezera {
+* header div.cabezera {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 20vh;
 }
-* body header div.cabezera h2 {
+* header div.cabezera h2 {
   color: #ffffff;
   font-family: "Caveat", sans-serif;
   font-size: 70px;
   cursor: pointer;
 }
-* body header div.cabezera h2:hover {
+* header div.cabezera h2:hover {
   color: #ce8619;
   transition: 600ms;
   font-size: 68px;
 }
-* body header div.cabezera form .contenedor-de-búsqueda {
+* header div.cabezera form .contenedor-de-búsqueda {
   position: relative;
   width: 30vw;
   height: 40px;
@@ -63,7 +56,7 @@
   border-radius: 30px;
   border: none;
 }
-* body header div.cabezera form .contenedor-de-búsqueda input {
+* header div.cabezera form .contenedor-de-búsqueda input {
   font-size: 16px;
   border: #ffffff solid 1px;
   border-radius: 30px;
@@ -72,13 +65,13 @@
   width: 100%;
   height: 100%;
 }
-* body header div.cabezera form .contenedor-de-búsqueda ::-moz-placeholder {
+* header div.cabezera form .contenedor-de-búsqueda ::-moz-placeholder {
   color: #ffffff;
 }
-* body header div.cabezera form .contenedor-de-búsqueda ::placeholder {
+* header div.cabezera form .contenedor-de-búsqueda ::placeholder {
   color: #ffffff;
 }
-* body header div.cabezera form .contenedor-de-búsqueda i {
+* header div.cabezera form .contenedor-de-búsqueda i {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -87,74 +80,74 @@
   height: 20px;
   color: #ffffff;
 }
-* body header div.cabezera p {
+* header div.cabezera p {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
 }
-* body header div.cabezera .Usuario {
+* header div.cabezera .Usuario {
   display: flex;
 }
-* body header div.cabezera .iconos {
+* header div.cabezera .iconos {
   margin: 0px 10px;
   color: #ffffff;
   cursor: pointer;
 }
-* body header div.cabezera .iconos:hover {
+* header div.cabezera .iconos:hover {
   color: #ce8619;
   transition: 600ms;
 }
-* body header div.cabezera .fa-bars {
+* header div.cabezera .fa-bars {
   display: none;
 }
-* body header div.cabezera .fa-house {
+* header div.cabezera .fa-house {
   display: none;
 }
-* body header div.cabezera .fa-location-dot {
+* header div.cabezera .fa-location-dot {
   display: none;
 }
-* body header div.cabezera .fa-bottle-droplet {
+* header div.cabezera .fa-bottle-droplet {
   display: none;
 }
 @media (max-width: 480px) {
-  * body header div.cabezera {
+  * header div.cabezera {
     display: flex;
     flex-direction: column;
     height: 10vh;
   }
-  * body header div.cabezera h2 {
+  * header div.cabezera h2 {
     color: red;
     font-family: "Caveat", sans-serif;
     font-size: 10px;
     margin-right: 50%;
   }
-  * body header div.cabezera h2:hover {
+  * header div.cabezera h2:hover {
     color: #ce8619;
     transition: 600ms;
     font-size: 68px;
   }
-  * body header div.cabezera form {
+  * header div.cabezera form {
     display: none;
   }
-  * body header div.cabezera form div.contenedor-de-búsqueda {
+  * header div.cabezera form div.contenedor-de-búsqueda {
     display: flex;
   }
-  * body header div.cabezera form div.contenedor-de-búsqueda i {
+  * header div.cabezera form div.contenedor-de-búsqueda i {
     display: flex;
   }
-  * body header div.cabezera p {
+  * header div.cabezera p {
     display: flex;
     visibility: hidden;
   }
-  * body header div.cabezera .Usuario {
+  * header div.cabezera .Usuario {
     display: flex;
   }
-  * body header div.cabezera .Usuario .iconos {
+  * header div.cabezera .Usuario .iconos {
     display: flex;
     position: relative;
     visibility: hidden;
   }
-  * body header div.cabezera .Usuario .fa-bars {
+  * header div.cabezera .Usuario .fa-bars {
     display: flex;
     position: absolute;
     font-size: 40px;
@@ -163,32 +156,32 @@
     top: 5%;
     color: #ffffff;
   }
-  * body header div.cabezera .Usuario .fa-bars .fa-bars:hover {
+  * header div.cabezera .Usuario .fa-bars .fa-bars:hover {
     color: #ce8619;
     transition: 2s;
     align-self: center;
   }
-  * body header .headerFondoNegro {
+  * header .headerFondoNegro {
     transition: 3s;
     background-color: rgba(0, 0, 0, 0.7);
   }
-  * body header div.cabezera {
+  * header div.cabezera {
     display: flex;
     flex-direction: column;
     height: 15vh;
   }
-  * body header div.cabezera h2 {
+  * header div.cabezera h2 {
     position: absolute;
     color: #ffffff;
     font-family: "Caveat", sans-serif;
     font-size: 50px;
   }
-  * body header div.cabezera h2:hover {
+  * header div.cabezera h2:hover {
     color: #ce8619;
     transition: 600ms;
     font-size: 68px;
   }
-  * body header div.cabezera .nuevop {
+  * header div.cabezera .nuevop {
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     color: #ffffff;
@@ -199,7 +192,7 @@
     transition: 0.5s;
     text-align: center;
   }
-  * body header div.cabezera .nuevoUsuario {
+  * header div.cabezera .nuevoUsuario {
     display: flex;
     flex-direction: column;
     margin-top: 80%;
@@ -210,7 +203,7 @@
     border-radius: 0px 0px 30px 30px;
     transition: 0.5s alternate;
   }
-  * body header div.cabezera .nuevoUsuario .nuevoiconos {
+  * header div.cabezera .nuevoUsuario .nuevoiconos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,17 +215,23 @@
     transition: 0.5s;
     font-size: large;
   }
-  * body header div.cabezera .nuevoUsuario .fa-bars {
+  * header div.cabezera .nuevoUsuario .fa-bars {
     display: flex;
     font-size: xx-large;
     top: 7%;
     z-index: 1;
     transition: 0.5s;
   }
-  * body header div.cabezera .nuevoUsuario .fa-bars .fa-bars:hover {
+  * header div.cabezera .nuevoUsuario .fa-bars .fa-bars:hover {
     color: #ce8619;
     transition: 2s;
   }
+}
+* body {
+  background-image: url(../IMA/BACKGROUND/pexels-francesco-paggiaro-793088\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 * body main {
   display: flex;
@@ -246,30 +245,97 @@
   text-align: center;
   font-family: "Cormorant Infant", serif;
   font-weight: 100;
-  font-size: 35px;
-  padding: 1.7%;
-  cursor: none;
+  font-size: 30px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
-* body main .botones {
+* body main .general {
   display: flex;
-  justify-content: center;
   justify-content: space-evenly;
-  margin: 12.5%;
+  margin-top: 20px;
 }
-* body main .botones button {
-  font-family: "Cormorant Infant", serif;
+* body main .general section {
+  display: flex;
+  flex-direction: column;
+}
+* body main .general h2 {
   color: #ffffff;
-  font-size: 33px;
-  background-color: rgba(0, 0, 0, 0.4117647059);
-  padding: 20px 30px;
-  border-radius: 70px;
-  border-color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+* body main .general iframe {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  width: 550px;
+  height: 500px;
+  border-radius: 10px;
+}
+* body main .general .datosDeEnvio {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ce8619;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+* body main .general .datosDeEnvio label {
+  color: #000000;
+  margin: 55px;
+}
+* body main .general .datosDeEnvio input {
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: 1px solid #ffffff;
+  width: 300px;
+}
+* body main .general .datosDeEnvio textarea {
+  border-radius: 5px;
+  padding: 15px 20px;
+  width: 300px;
+  margin-top: 5px;
+  height: 50px;
+  border: none;
+}
+* body main .general .datosDeEnvio ::-moz-placeholder {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Cormorant Infant", serif;
+}
+* body main .general .datosDeEnvio ::placeholder {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Cormorant Infant", serif;
+}
+* body main .general button {
+  background-color: rgba(206, 134, 25, 0.8);
+  width: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: "Cormorant Infant", serif;
+  font-size: large;
+  font-weight: bold;
   cursor: pointer;
 }
-* body main .botones button:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  border-color: #ce8619;
-  transition: 600ms;
+* body main .general button:hover {
+  color: #000000;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+* body main .general .cambio-color-bot {
+  background-color: rgba(17, 119, 70, 0.5333333333);
+  transition: all;
+}
+* body main .general .cambio-color-bot:hover {
+  color: #ffffff;
+  background-color: rgba(17, 119, 70, 0.5333333333);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4117647059), 0 0 20px rgba(0, 0, 0, 0.4117647059), 0 0 40px rgba(0, 0, 0, 0.4117647059);
 }
 * body footer div {
   display: flex;
@@ -316,23 +382,56 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  body main h1 {
-    font-size: 35px;
-    padding: 1.7%;
-    cursor: none;
+@media (max-width: 480px) {
+  body {
+    width: 100%;
   }
-  body main .botones {
+  body main {
+    margin-bottom: 40px;
+  }
+  body main h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+  body main .general {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10vh 0 30vh 0;
+    text-align: center;
   }
-  body main .botones button {
-    align-content: center;
-    align-self: center;
-    font-size: 33px;
-    padding: 20px 30px;
-    margin-top: 20px;
+  body main .general section h2 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
   }
-}/*# sourceMappingURL=BienvenidosStyle.css.map */
+  body main .general section iframe {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 80vw;
+    margin: auto;
+  }
+  body main .general section h2 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 20px 0;
+  }
+  body main .general section .datosDeEnvio {
+    width: 80vw;
+    margin: auto;
+  }
+  body main .general section .datosDeEnvio input {
+    width: 70vw;
+    height: 3vw;
+  }
+  body main .general section .datosDeEnvio textarea {
+    width: 70vw;
+    height: 3vw;
+    margin: 8px 0;
+  }
+  body main .general section button {
+    width: 60vw;
+    margin-left: 20vw;
+  }
+}/*# sourceMappingURL=contactenos.css.map */
