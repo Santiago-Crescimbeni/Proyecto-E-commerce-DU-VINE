@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Enologia</title>
+    <link rel="stylesheet" href="./CSS/contactenos.css" />
+    <script
+      src="https://kit.fontawesome.com/2c564250c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <h1>DONDE ENCONTRARNOS</h1>
+      <div class="general">
+        <section>
+          <h2>¡ESTAMOS ACA!</h2>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d824.0481867679682!2d-55.9558765!3d-34.2946319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a05ba147775805%3A0x14624a4913ca438f!2sDu%20Vine!5e0!3m2!1ses!2sar!4v1673964675454!5m2!1ses!2sar"
+              width="600"
+              height="450"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+        <section>
+          <h2>CONTACTANOS</h2>
+          <form action="baseDeDatos" method="#" class="datosDeEnvio">
+            <label for="NombreApellido"> Nombre y Apellido</label>
+            <input
+              type="text"
+              placeholder="Ingresar Nombre..."
+              name="NombreApellido"
+            />
+            <label for="Telefono"> Telefono</label>
+            <input
+              type="number"
+              placeholder="Ingresar Telefono..."
+              name="Telefono"
+            />
+            <label for="Email"> Email</label>
+            <input type="email" placeholder="Ingresar Email..." name="Email" />
+            <label for="Direccion"> Direccion</label>
+            <input
+              type="text"
+              placeholder="Ingresar Direccion..."
+              name="Direccion"
+            />
+            <label for="Comentario"> Comentario</label>
+            <textarea
+              name="Comentario"
+              id="comentario"
+              cols="30"
+              rows="2"
+              placeholder="Informacion Adicional... "
+            ></textarea>
+          </form>
+          <button class="botonEnviar">ENVIAR</button>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <script src="./SCRIPTS/header.js"></script>
+    <script src="./SCRIPTS/obtenerUsuario.js"></script>
+    <script src="./SCRIPTS/contactenos.js"></script>
+  </body>
+</html>
