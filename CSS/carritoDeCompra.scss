@@ -1,0 +1,413 @@
+@import "colores.scss";
+@import "fuentes.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  body {
+    background-image: url(../IMA/BACKGROUND/pexels-stanislav-kondratiev-2909085\ \(1\).png);
+    background-repeat: 100%;
+    background-size: cover;
+    header {
+      @import "header.scss";
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      h1 {
+        background-color: $negro-agua;
+        border: 0.5px solid white;
+        color: $blanco;
+        text-align: center;
+        font-family: $font-A;
+        font-weight: 100;
+        font-size: 50px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        cursor: none;
+      }
+
+      //Carrito vacio, no alterar dentro de esta seccion------------------------------------------------------------
+      .contendio-carrito {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        padding: 115px;
+
+        background-color: $negro-agua;
+        border: 0.5px solid white;
+        color: $blanco;
+        text-align: center;
+        font-family: $font-A;
+        width: 70%;
+        margin: 40px auto;
+
+        box-shadow: 0 0 10px 5px #000000;
+
+        .carritoVacio {
+          font-size: 35px;
+        }
+        .queComprar {
+          margin: 30px 0 90px 0;
+          color: wheat;
+          font-size: 25px;
+        }
+
+        .volverAComprar {
+          background-color: $verde-agua;
+          padding: 15px 50px 15px 50px;
+          border-radius: 30px;
+          border: 3px solid $blanco;
+          color: $blanco;
+          font-family: $font-B;
+          font-size: large;
+          font-weight: bold;
+        }
+        //----------------------------------------------------------------------------------------------------------
+      }
+
+      //------------------------------------Renderizado de tarjetas------------------------------------------------
+
+      .prod-cant-prec-total {
+        display: flex;
+        margin: 40px 0px 0px 150px;
+        color: $blanco;
+        font-family: $font-A;
+        font-weight: lighter;
+
+        .contenido-productoYagregados {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+
+          .general-A {
+            display: flex;
+            align-items: center;
+            background-color: $negro-agua;
+            width: 40vw;
+            height: 300px;
+            justify-content: space-evenly;
+            border-radius: 35px;
+            margin-bottom: 10px;
+            color: $blanco;
+
+            .productos {
+              display: flex;
+              flex-direction: column;
+              align-self: center;
+              align-items: center;
+
+              .h2-productos {
+                font-size: 30px;
+                padding-bottom: 10px;
+              }
+              .titulo-img {
+                display: flex;
+                padding-left: 35px;
+                background-color: $gris;
+                border-radius: 30px;
+                width: 400px;
+                height: 200px;
+                justify-content: space-evenly;
+              }
+
+              .span-nombre {
+                color: $negro;
+                align-self: center;
+                font-size: 30px;
+              }
+              .span-precio {
+                color: $negro;
+                align-self: center;
+                font-size: 30px;
+              }
+              .img-producto {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 25px;
+              }
+            }
+            .info-producto {
+              display: flex;
+              justify-content: space-between;
+              width: 40%;
+              padding: 10px;
+              text-align: center;
+              margin-top: 17px;
+            }
+            .cantidades {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .h2-special {
+                font-size: 30px;
+                margin-bottom: 100px;
+                margin-top: 17px;
+              }
+              .sum-span-res {
+                display: flex;
+                i {
+                  margin-top: 10px;
+                  padding: 0px 10px;
+                  cursor: pointer;
+                }
+
+                .cantidad-productos {
+                  padding-bottom: 100px;
+                  font-size: xx-large;
+                }
+              }
+            }
+            .precios {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-right: 0px;
+              .h2-special {
+                font-size: 30px;
+                margin-bottom: 100px;
+                margin-top: 15px;
+              }
+              .monto {
+                font-size: 30px;
+              }
+            }
+            .fa-circle-xmark {
+              color: $blanco;
+              opacity: 0.7;
+              font-size: 20px;
+            }
+          }
+        }
+
+        //----------------------------------Renderizado de costos--------------------------------------------
+
+        .general-B {
+          position: fixed;
+          margin-left: 60%;
+          background-color: $negro-agua;
+          border-radius: 35px;
+          flex-direction: column;
+          width: 450px;
+          text-align: center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          margin-top: 10px;
+
+          .costo-pedido {
+            font-size: 35px;
+            padding-bottom: 10px;
+          }
+
+          span {
+            padding-left: 30px;
+            padding-bottom: 10px;
+          }
+          h3.total {
+            padding-right: 30px;
+            font-family: $font-A;
+            font-size: 24px;
+            padding-bottom: 25px;
+            padding-top: 10px;
+          }
+
+          .pagar {
+            background-color: rgba($color: $amarillo, $alpha: 0.8);
+            padding: 15px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border-radius: 30px;
+            border: 2px solid $blanco;
+            color: $blanco;
+            font-family: $font-B;
+            font-size: large;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          .pagar:hover {
+            background-color: rgba($color: $blanco, $alpha: 0.4);
+            color: $negro;
+            box-shadow: 0 0 10px $blanco, 0 0 20px $blanco, 0 0 40px $blanco;
+            transition: 1s;
+          }
+        }
+      }
+      .seguir-comprando {
+        position: relative;
+        background-color: rgba($color: $amarillo, $alpha: 0.8);
+        padding: 15px 80px;
+        margin: 15px 0 140px 220px;
+        width: 30%;
+        border-radius: 30px;
+        border: 2px solid $blanco;
+        color: $blanco;
+        font-family: $font-B;
+        font-size: x-large;
+        font-weight: bold;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      .seguir-comprando:hover {
+        background-color: rgba($color: $blanco, $alpha: 0.4);
+        color: $negro;
+        box-shadow: 0 0 10px $blanco, 0 0 20px $blanco, 0 0 40px $blanco;
+        transition: 1s;
+      }
+    }
+
+    footer {
+      @import "footer.scss";
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    main {
+      margin-bottom: 50px;
+
+      h1 {
+        font-size: 30px;
+        margin: 20px 0px 0px 0px;
+      }
+      .prod-cant-prec-total {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0;
+
+        .contenido-productoYagregados {
+          width: 100%;
+          justify-content: center;
+
+          .general-A {
+            background: none;
+            margin-top: 100px;
+            flex-direction: column;
+
+            .productos {
+              .h2-productos {
+                color: $blanco;
+                font-size: 20px;
+                padding: 10px;
+                background-color: rgba($color: $amarillo, $alpha: 0.4);
+                width: 100vw;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                margin: 0px 0px 50px 0px;
+              }
+              .titulo-img {
+                width: 100%;
+                background: none;
+                padding: 0;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .span-nombre {
+                // font-size: 30px;
+                color: $blanco;
+                margin: 0px;
+
+                background: none;
+              }
+
+              .img-producto {
+                justify-content: center;
+                align-items: center;
+                width: 250px;
+                height: 250px;
+                padding: 0;
+              }
+            }
+            .info-producto {
+              padding: 0;
+              margin: 50px 0px 20px 0px;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              background-color: $negro-agua;
+              width: 100vw;
+              height: 100px;
+            }
+            .cantidades {
+              .h2-special {
+                display: none;
+              }
+              .sum-span-res {
+                color: $blanco;
+                padding: 0;
+                i {
+                  margin: 5px;
+                  padding: 0;
+                }
+
+                .cantidad-productos {
+                  font-size: 20px;
+                  padding: 0;
+                }
+              }
+            }
+            .precios {
+              color: $blanco;
+              .h2-special {
+                display: none;
+              }
+              .monto {
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        .general-B {
+          position: relative;
+          width: 90vw;
+          margin: 35px 0px 0px 0px;
+
+          font-size: 15px;
+
+          .costo-pedido {
+            font-size: 20px;
+            padding: 10px;
+          }
+          span {
+            padding: 10px;
+          }
+          h3.total {
+            padding: 10px;
+            font-size: 20px;
+          }
+          .pagar {
+            font-size: 15px;
+            padding: 10px;
+          }
+        }
+      }
+      .seguir-comprando {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 20%;
+        margin: auto;
+        font-size: 16px;
+        margin-top: 15px;
+        overflow: none;
+        border-radius: 50px;
+        margin-bottom: 15px;
+        padding: 10px;
+      }
+    }
+  }
+}
