@@ -1,0 +1,443 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@100&display=swap");
+:root {
+  --burbuja-ancho: 64px;
+  --burbuja-icono-ancho: 32px;
+  --burbuja-whastapp: #25d366;
+  --burbuja-color: #fff;
+  --burbuja-sombra: rgba(0, 0, 0, 0.1);
+  --burbuja-inactivo: #ff0000;
+  --chat-ancho: 360px;
+  --chat-sombra: rgba(0, 0, 0, 0.1);
+  --chat-cabecera: #095e54;
+  --chat-cabecera-texto: #fff;
+  --chat-cabecera-activo: #4ad504;
+  --chat-avatar-ancho: 52px;
+  --chat-cuerpo-texto: #111;
+  --chat-cuerpo-texto-operador: rgba(0, 0, 0, 0.4);
+  --chat-cuerpo-hora: rgba(17, 17, 17, 0.5);
+  --chat-cuerpo-fondo: rgba(230, 221, 212, 0.85);
+  --chat-cuerpo-dialogo: #fff;
+  --chat-cuerpo-dialogo-nombre: rgba(0, 0, 0, 0.4);
+  --chat-pie: #fff;
+  --chat-boton: #4fce5d;
+  --chat-boton-texto: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-image: url(../IMA/BACKGROUND/glass-of-red-wine-and-bottle-on-bar-counter\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body header div.cabezera {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+* body header div.cabezera h2 {
+  color: #ffffff;
+  font-family: "Caveat", sans-serif;
+  font-size: 70px;
+  cursor: pointer;
+}
+* body header div.cabezera h2:hover {
+  color: #ce8619;
+  transition: 600ms;
+  font-size: 68px;
+}
+* body header div.cabezera form .contenedor-de-búsqueda {
+  position: relative;
+  width: 30vw;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 30px;
+  border: none;
+}
+* body header div.cabezera form .contenedor-de-búsqueda input {
+  font-size: 16px;
+  border: #ffffff solid 1px;
+  border-radius: 30px;
+  padding: 0 12px 0 42px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+* body header div.cabezera form .contenedor-de-búsqueda ::-moz-placeholder {
+  color: #ffffff;
+}
+* body header div.cabezera form .contenedor-de-búsqueda ::placeholder {
+  color: #ffffff;
+}
+* body header div.cabezera form .contenedor-de-búsqueda i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+* body header div.cabezera p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+* body header div.cabezera .Usuario {
+  display: flex;
+}
+* body header div.cabezera .iconos {
+  margin: 0px 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+* body header div.cabezera .iconos:hover {
+  color: #ce8619;
+  transition: 600ms;
+}
+* body header div.cabezera .fa-bars {
+  display: none;
+}
+* body header div.cabezera .fa-house {
+  display: none;
+}
+* body header div.cabezera .fa-location-dot {
+  display: none;
+}
+* body header div.cabezera .fa-bottle-droplet {
+  display: none;
+}
+@media (max-width: 480px) {
+  * body header div.cabezera {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+  }
+  * body header div.cabezera h2 {
+    color: red;
+    font-family: "Caveat", sans-serif;
+    font-size: 10px;
+    margin-right: 50%;
+  }
+  * body header div.cabezera h2:hover {
+    color: #ce8619;
+    transition: 600ms;
+    font-size: 68px;
+  }
+  * body header div.cabezera form {
+    display: none;
+  }
+  * body header div.cabezera form div.contenedor-de-búsqueda {
+    display: flex;
+  }
+  * body header div.cabezera form div.contenedor-de-búsqueda i {
+    display: flex;
+  }
+  * body header div.cabezera p {
+    display: flex;
+    visibility: hidden;
+  }
+  * body header div.cabezera .Usuario {
+    display: flex;
+  }
+  * body header div.cabezera .Usuario .iconos {
+    display: flex;
+    position: relative;
+    visibility: hidden;
+  }
+  * body header div.cabezera .Usuario .fa-bars {
+    display: flex;
+    position: absolute;
+    font-size: 40px;
+    z-index: 1;
+    left: 75%;
+    top: 5%;
+    color: #ffffff;
+  }
+  * body header div.cabezera .Usuario .fa-bars .fa-bars:hover {
+    color: #ce8619;
+    transition: 2s;
+    align-self: center;
+  }
+  * body header .headerFondoNegro {
+    transition: 3s;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  * body header div.cabezera {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+  }
+  * body header div.cabezera h2 {
+    position: absolute;
+    color: #ffffff;
+    font-family: "Caveat", sans-serif;
+    font-size: 50px;
+  }
+  * body header div.cabezera h2:hover {
+    color: #ce8619;
+    transition: 600ms;
+    font-size: 68px;
+  }
+  * body header div.cabezera .nuevop {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    z-index: 1;
+    margin-top: 70%;
+    margin-bottom: 5%;
+    visibility: visible;
+    transition: 0.5s;
+    text-align: center;
+  }
+  * body header div.cabezera .nuevoUsuario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80%;
+    margin-left: 55%;
+    background: linear-gradient(rgb(127, 69, 14), rgb(192, 100, 14), rgba(244, 122, 8, 0.703));
+    padding: 100px 35px 40px 35px;
+    z-index: 1;
+    border-radius: 0px 0px 30px 30px;
+    transition: 0.5s alternate;
+  }
+  * body header div.cabezera .nuevoUsuario .nuevoiconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45%;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1;
+    visibility: visible;
+    transition: 0.5s;
+    font-size: large;
+  }
+  * body header div.cabezera .nuevoUsuario .fa-bars {
+    display: flex;
+    font-size: xx-large;
+    top: 7%;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  * body header div.cabezera .nuevoUsuario .fa-bars .fa-bars:hover {
+    color: #ce8619;
+    transition: 2s;
+  }
+}
+* body main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+* body main .fa-circle-xmark {
+  left: 50px;
+}
+* body main h1 {
+  background-color: rgba(0, 0, 0, 0.4117647059);
+  border: 0.5px solid white;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 100;
+  padding: 1.7%;
+}
+* body main div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+* body main div .img-miniaturas {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  margin-left: 250px;
+}
+* body main div .img-miniaturas img {
+  height: 155px;
+  margin: 20px 0 20px 0;
+}
+* body main div .img-principal {
+  display: flex;
+  align-self: center;
+  height: 520px;
+}
+* body main div .img-principal i {
+  margin-top: 200px;
+  font-size: 100px;
+  color: rgba(178, 178, 178, 0.8549019608);
+  cursor: pointer;
+}
+* body main div .img-principal i:hover {
+  color: #b2b2b2;
+}
+* body main div .info-img {
+  flex-direction: column;
+  margin: 40px 250px 0 0;
+}
+* body main div .info-img .descripcion {
+  flex-direction: column;
+  font-size: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 25px;
+  border-radius: 60px;
+  border: 3px solid #ffffff;
+  width: 430px;
+}
+* body main div .info-img .descripcion h2 {
+  font-family: "Cormorant Infant", serif;
+  margin-bottom: 20px;
+}
+* body main div .info-img .descripcion p {
+  font-family: "Cormorant Infant", serif;
+}
+* body main div .info-img .precio-aggCarrito {
+  width: 300px;
+  color: #ffffff;
+  margin-left: 80px;
+  margin-top: 5vh;
+}
+* body main div .info-img .precio-aggCarrito span {
+  font-size: xx-large;
+  margin-top: 20px;
+}
+* body main div .info-img button {
+  width: 150px;
+  background-color: rgba(206, 134, 25, 0.8);
+  padding: 15px;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-family: "Cormorant Infant", serif;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+* body main div .info-img button:hover {
+  color: #000000;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+* body footer div {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ce8619;
+}
+* body footer div a {
+  width: 5%;
+}
+* body footer div a i {
+  font-size: xx-large;
+  margin: 10px 5px;
+  color: #ffffff;
+}
+* body footer div a i:hover {
+  color: #000000;
+  transition: 600ms;
+}
+@media (max-width: 480px) {
+  * body footer div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ce8619;
+  }
+  * body footer div a {
+    width: 70px;
+  }
+  * body footer div a i {
+    font-size: xx-large;
+    margin: 10px 5px;
+    color: #ffffff;
+  }
+  * body footer div a i:hover {
+    color: #000000;
+    transition: 600ms;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    height: 100vh;
+  }
+  body main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main div {
+    flex-direction: column;
+  }
+  body main div .img-miniaturas {
+    flex-direction: row;
+    margin-left: 0px;
+    margin: 15px 0 0;
+  }
+  body main div .img-miniaturas img {
+    height: 100px;
+    width: 100%;
+    margin: 0px 10px 20px 0;
+  }
+  body main div .img-principal {
+    justify-content: center;
+    height: 210px;
+    margin-top: 0;
+  }
+  body main div .img-principal .grande {
+    width: 60%;
+  }
+  body main div .img-principal i {
+    margin-top: 70px;
+    font-size: 80px;
+    color: rgba(178, 178, 178, 0.8549019608);
+    cursor: pointer;
+  }
+  body main div .info-img {
+    margin: 0px 20px;
+  }
+  body main div .info-img .descripcion {
+    border: none;
+    width: 100%;
+    padding: 1px;
+    font-size: 20px;
+    margin-top: 5%;
+    opacity: 80%;
+    text-align: center;
+  }
+  body main div .info-img .descripcion h2 {
+    font-family: "Cormorant Infant", serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  body main div .info-img .descripcion p {
+    display: none;
+  }
+  body main div .info-img .precio-aggCarrito {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  body main div .info-img button {
+    font-size: 16px;
+    width: 150px;
+    padding: 0px;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=dateUnGusto.css.map */
