@@ -1,0 +1,577 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@100&display=swap");
+:root {
+  --burbuja-ancho: 64px;
+  --burbuja-icono-ancho: 32px;
+  --burbuja-whastapp: #25d366;
+  --burbuja-color: #fff;
+  --burbuja-sombra: rgba(0, 0, 0, 0.1);
+  --burbuja-inactivo: #ff0000;
+  --chat-ancho: 360px;
+  --chat-sombra: rgba(0, 0, 0, 0.1);
+  --chat-cabecera: #095e54;
+  --chat-cabecera-texto: #fff;
+  --chat-cabecera-activo: #4ad504;
+  --chat-avatar-ancho: 52px;
+  --chat-cuerpo-texto: #111;
+  --chat-cuerpo-texto-operador: rgba(0, 0, 0, 0.4);
+  --chat-cuerpo-hora: rgba(17, 17, 17, 0.5);
+  --chat-cuerpo-fondo: rgba(230, 221, 212, 0.85);
+  --chat-cuerpo-dialogo: #fff;
+  --chat-cuerpo-dialogo-nombre: rgba(0, 0, 0, 0.4);
+  --chat-pie: #fff;
+  --chat-boton: #4fce5d;
+  --chat-boton-texto: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-image: url(../IMA/BACKGROUND/pexels-stanislav-kondratiev-2909085\ \(1\).png);
+  background-repeat: 100%;
+  background-size: cover;
+}
+* body header div.cabezera {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+* body header div.cabezera h2 {
+  color: #ffffff;
+  font-family: "Caveat", sans-serif;
+  font-size: 70px;
+  cursor: pointer;
+}
+* body header div.cabezera h2:hover {
+  color: #ce8619;
+  transition: 600ms;
+  font-size: 68px;
+}
+* body header div.cabezera form .contenedor-de-búsqueda {
+  position: relative;
+  width: 30vw;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 30px;
+  border: none;
+}
+* body header div.cabezera form .contenedor-de-búsqueda input {
+  font-size: 16px;
+  border: #ffffff solid 1px;
+  border-radius: 30px;
+  padding: 0 12px 0 42px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+* body header div.cabezera form .contenedor-de-búsqueda ::-moz-placeholder {
+  color: #ffffff;
+}
+* body header div.cabezera form .contenedor-de-búsqueda ::placeholder {
+  color: #ffffff;
+}
+* body header div.cabezera form .contenedor-de-búsqueda i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+* body header div.cabezera p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+* body header div.cabezera .Usuario {
+  display: flex;
+}
+* body header div.cabezera .iconos {
+  margin: 0px 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+* body header div.cabezera .iconos:hover {
+  color: #ce8619;
+  transition: 600ms;
+}
+* body header div.cabezera .fa-bars {
+  display: none;
+}
+* body header div.cabezera .fa-house {
+  display: none;
+}
+* body header div.cabezera .fa-location-dot {
+  display: none;
+}
+* body header div.cabezera .fa-bottle-droplet {
+  display: none;
+}
+@media (max-width: 480px) {
+  * body header div.cabezera {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+  }
+  * body header div.cabezera h2 {
+    color: red;
+    font-family: "Caveat", sans-serif;
+    font-size: 10px;
+    margin-right: 50%;
+  }
+  * body header div.cabezera h2:hover {
+    color: #ce8619;
+    transition: 600ms;
+    font-size: 68px;
+  }
+  * body header div.cabezera form {
+    display: none;
+  }
+  * body header div.cabezera form div.contenedor-de-búsqueda {
+    display: flex;
+  }
+  * body header div.cabezera form div.contenedor-de-búsqueda i {
+    display: flex;
+  }
+  * body header div.cabezera p {
+    display: flex;
+    visibility: hidden;
+  }
+  * body header div.cabezera .Usuario {
+    display: flex;
+  }
+  * body header div.cabezera .Usuario .iconos {
+    display: flex;
+    position: relative;
+    visibility: hidden;
+  }
+  * body header div.cabezera .Usuario .fa-bars {
+    display: flex;
+    position: absolute;
+    font-size: 40px;
+    z-index: 1;
+    left: 75%;
+    top: 5%;
+    color: #ffffff;
+  }
+  * body header div.cabezera .Usuario .fa-bars .fa-bars:hover {
+    color: #ce8619;
+    transition: 2s;
+    align-self: center;
+  }
+  * body header .headerFondoNegro {
+    transition: 3s;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  * body header div.cabezera {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+  }
+  * body header div.cabezera h2 {
+    position: absolute;
+    color: #ffffff;
+    font-family: "Caveat", sans-serif;
+    font-size: 50px;
+  }
+  * body header div.cabezera h2:hover {
+    color: #ce8619;
+    transition: 600ms;
+    font-size: 68px;
+  }
+  * body header div.cabezera .nuevop {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    z-index: 1;
+    margin-top: 70%;
+    margin-bottom: 5%;
+    visibility: visible;
+    transition: 0.5s;
+    text-align: center;
+  }
+  * body header div.cabezera .nuevoUsuario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80%;
+    margin-left: 55%;
+    background: linear-gradient(rgb(127, 69, 14), rgb(192, 100, 14), rgba(244, 122, 8, 0.703));
+    padding: 100px 35px 40px 35px;
+    z-index: 1;
+    border-radius: 0px 0px 30px 30px;
+    transition: 0.5s alternate;
+  }
+  * body header div.cabezera .nuevoUsuario .nuevoiconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45%;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1;
+    visibility: visible;
+    transition: 0.5s;
+    font-size: large;
+  }
+  * body header div.cabezera .nuevoUsuario .fa-bars {
+    display: flex;
+    font-size: xx-large;
+    top: 7%;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  * body header div.cabezera .nuevoUsuario .fa-bars .fa-bars:hover {
+    color: #ce8619;
+    transition: 2s;
+  }
+}
+* body main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+* body main h1 {
+  background-color: rgba(0, 0, 0, 0.4117647059);
+  border: 0.5px solid white;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 100;
+  font-size: 50px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  cursor: none;
+  width: 100%;
+}
+* body main .articulo {
+  font-size: 0px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+* body main .contenido-productoYagregados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+* body main .contenido-productoYagregados .general-A {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4117647059);
+  width: 50%;
+  height: 350px;
+  justify-content: space-evenly;
+  border-radius: 35px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+* body main .contenido-productoYagregados .general-A .productos {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+* body main .contenido-productoYagregados .general-A .productos .h2-productos {
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+* body main .contenido-productoYagregados .general-A .productos .titulo-img {
+  display: flex;
+  padding-left: 30px;
+  background-color: rgba(178, 178, 178, 0.8549019608);
+  border-radius: 30px;
+  width: 400px;
+  height: 200px;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+* body main .contenido-productoYagregados .general-A .productos .span-nombre {
+  color: #ffffff;
+  position: flex;
+  align-self: center;
+  font-size: 30px;
+  margin-top: 5%;
+}
+* body main .contenido-productoYagregados .general-A .productos .span-precio {
+  color: #000000;
+  align-self: center;
+  font-size: 30px;
+}
+* body main .contenido-productoYagregados .general-A .productos .img-producto {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+}
+* body main .contenido-productoYagregados .general-A .info-producto {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+* body main .contenido-productoYagregados .general-A .cantidades {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5%;
+}
+* body main .contenido-productoYagregados .general-A .cantidades .h2-special {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+* body main .contenido-productoYagregados .general-A .cantidades .descripcion {
+  font-size: 20px;
+}
+* body main .contenido-productoYagregados .general-A .cantidades .sum-span-res {
+  display: flex;
+}
+* body main .contenido-productoYagregados .general-A .cantidades .sum-span-res i {
+  margin-top: 10px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+* body main .contenido-productoYagregados .general-A .cantidades .sum-span-res .cantidad-productos {
+  padding-bottom: 200px;
+  font-size: xx-large;
+}
+* body main .contenido-productoYagregados .general-A .precios {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0px;
+}
+* body main .contenido-productoYagregados .general-A .precios .h2-special {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+* body main .contenido-productoYagregados .general-A .precios .monto {
+  font-size: 30px;
+}
+* body main .resultados {
+  width: 30%;
+  margin: 2%;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.4117647059);
+  border-radius: 30px;
+}
+* body main .resultados h2 {
+  padding: 2%;
+}
+* body main .resultados p {
+  padding: 2% 0 3% 2%;
+}
+* .seguir-comprando {
+  position: relative;
+  background-color: rgba(206, 134, 25, 0.8);
+  padding: 15px 80px;
+  margin-top: 15px;
+  margin-left: 300px;
+  margin-bottom: 140px;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+}
+* .seguir-comprando:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000000;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+  transition: 1s;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ce8619;
+}
+footer div a {
+  width: 5%;
+}
+footer div a i {
+  font-size: xx-large;
+  margin: 10px 5px;
+  color: #ffffff;
+}
+footer div a i:hover {
+  color: #000000;
+  transition: 600ms;
+}
+@media (max-width: 480px) {
+  footer div {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ce8619;
+  }
+  footer div a {
+    width: 70px;
+  }
+  footer div a i {
+    font-size: xx-large;
+    margin: 10px 5px;
+    color: #ffffff;
+  }
+  footer div a i:hover {
+    color: #000000;
+    transition: 600ms;
+  }
+}
+
+.filtro {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  * body main .articulo {
+    font-size: 0px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  * body main .contenido-productoYagregados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  * body main .contenido-productoYagregados .general-A {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4117647059);
+    width: 90%;
+    height: 50%;
+    background-color: rgb(157, 255, 127);
+  }
+  * body main .contenido-productoYagregados .general-A .productos {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  }
+  * body main .contenido-productoYagregados .general-A .productos .h2-productos {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+  * body main .contenido-productoYagregados .general-A .productos .titulo-img {
+    padding-left: 20px;
+    width: 100%;
+  }
+  * body main .contenido-productoYagregados .general-A .span-precio {
+    color: #000000;
+    align-self: center;
+    font-size: 30px;
+  }
+  * body main .contenido-productoYagregados .general-A .img-producto {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+  }
+  * body main .contenido-productoYagregados .info-producto {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  * body main .contenido-productoYagregados .cantidades {
+    background-color: aqua;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  * body main .contenido-productoYagregados .cantidades .h2-special {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  * body main .contenido-productoYagregados .cantidades .descripcion {
+    font-size: 20px;
+    text-align: center;
+  }
+  * body main .contenido-productoYagregados .cantidades .sum-span-res {
+    display: flex;
+  }
+  * body main .contenido-productoYagregados .cantidades .sum-span-res i {
+    margin-top: 10px;
+    padding: 0px 10px;
+    cursor: pointer;
+  }
+  * body main .contenido-productoYagregados .cantidades .sum-span-res .cantidad-productos {
+    padding-bottom: 200px;
+    font-size: xx-large;
+  }
+  * body main .contenido-productoYagregados .precios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: rebeccapurple;
+  }
+  * body main .contenido-productoYagregados .precios .h2-special {
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  * body main .contenido-productoYagregados .precios .monto {
+    font-size: 30px;
+  }
+  * body .resultados {
+    width: 30%;
+    margin: 2%;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.4117647059);
+    border-radius: 30px;
+  }
+  * body .resultados h2 {
+    padding: 2%;
+  }
+  * body .resultados p {
+    padding: 2% 0 3% 2%;
+  }
+  .seguir-comprando {
+    position: relative;
+    background-color: rgba(206, 134, 25, 0.8);
+    padding: 15px 80px;
+    margin-top: 15px;
+    margin-left: 300px;
+    margin-bottom: 140px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .seguir-comprando:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #000000;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+    transition: 1s;
+  }
+}/*# sourceMappingURL=campoBusqueda.css.map */

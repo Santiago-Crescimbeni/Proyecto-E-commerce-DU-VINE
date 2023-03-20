@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Enologia</title>
+
+    <link rel="stylesheet" href="./CSS/campoBusqueda.css" />
+    <script src="./SCRIPTS/productos.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/2c564250c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="cabezera">
+        <h2 class="logo">Du Vine</h2>
+        <form class="busqueda">
+          <div class="contenedor-de-búsqueda">
+            <input
+              class="buscador"
+              type="text"
+              id="buscador"
+              placeholder="Buscar vino..."
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </form>
+        <div class="Usuario">
+          <i class="fa-solid fa-bars"></i>
+          <p class="nombreUsuario">Bienvenido</p>
+          <i class="fa-regular fa-user iconos"></i>
+          <i class="fa-solid fa-cart-shopping iconos">
+            <i class="fa-solid fa-location-dot iconos"></i>
+            <i class="fa-solid fa-bottle-droplet iconos"></i>
+            <i class="fa-solid fa-house iconos"></i>
+            <span class="incrementoProductos"></span
+          ></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Nustro catálago</h1>
+      <div class="botella"></div>
+
+      <section class="resultados">
+        <h2>No se encontraron mas resultados</h2>
+        <p>
+          Este buscador solo funciona si sabe exactamente el nombre de la
+          botella que busca
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <script src="./SCRIPTS/header.js"></script>
+
+    <!-- <script src="./SCRIPTS/obtenerUsuario.js"></script> -->
+
+    <script src="./SCRIPTS/campoBusqueda.js"></script>
+  </body>
+</html>
