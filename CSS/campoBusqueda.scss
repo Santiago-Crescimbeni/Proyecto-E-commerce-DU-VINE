@@ -1,0 +1,343 @@
+@import "colores.scss";
+@import "fuentes.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  body {
+    background-image: url(../IMA/BACKGROUND/pexels-stanislav-kondratiev-2909085\ \(1\).png);
+    background-repeat: 100%;
+    background-size: cover;
+
+    header {
+      @import "header.scss";
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      h1 {
+        background-color: $negro-agua;
+        border: 0.5px solid white;
+        color: $blanco;
+        text-align: center;
+        font-family: $font-A;
+        font-weight: 100;
+        font-size: 50px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        cursor: none;
+        width: 100%;
+      }
+
+      //------------------------------------Renderizado de tarjetas------------------------------------------------
+      .articulo {
+        font-size: 0px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+      .contenido-productoYagregados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .general-A {
+          display: flex;
+          align-items: center;
+          background-color: $negro-agua;
+          width: 50%;
+          height: 350px;
+          justify-content: space-evenly;
+          border-radius: 35px;
+          margin-bottom: 10px;
+          color: $blanco;
+
+          .productos {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            align-items: center;
+
+            .h2-productos {
+              font-size: 10px;
+              padding-bottom: 10px;
+            }
+            .titulo-img {
+              display: flex;
+              padding-left: 30px;
+              background-color: $gris;
+              border-radius: 30px;
+              width: 400px;
+              height: 200px;
+              justify-content: space-evenly;
+              margin-top: 10%;
+            }
+
+            .span-nombre {
+              color: $blanco;
+              position: flex;
+              align-self: center;
+              font-size: 30px;
+              margin-top: 5%;
+            }
+            .span-precio {
+              color: $negro;
+              align-self: center;
+              font-size: 30px;
+            }
+            .img-producto {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border-radius: 25px;
+            }
+          }
+          .info-producto {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            padding: 10px;
+            text-align: center;
+            margin-top: 15px;
+          }
+          .cantidades {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 5%;
+            .h2-special {
+              font-size: 30px;
+              margin-bottom: 20px;
+            }
+            .descripcion {
+              font-size: 20px;
+            }
+            .sum-span-res {
+              display: flex;
+              i {
+                margin-top: 10px;
+                padding: 0px 10px;
+                cursor: pointer;
+              }
+
+              .cantidad-productos {
+                padding-bottom: 200px;
+                font-size: xx-large;
+              }
+            }
+          }
+          .precios {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0px;
+            .h2-special {
+              font-size: 30px;
+              margin-bottom: 40px;
+            }
+            .monto {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .resultados {
+        width: 30%;
+        margin: 2%;
+        color: rgba($color: $blanco, $alpha: 0.8);
+        background-color: $negro-agua;
+        border-radius: 30px;
+        h2 {
+          padding: 2%;
+        }
+        p {
+          padding: 2% 0 3% 2%;
+        }
+      }
+    }
+  }
+  .seguir-comprando {
+    position: relative;
+    background-color: rgba($color: $amarillo, $alpha: 0.8);
+    padding: 15px 80px;
+    margin-top: 15px;
+    margin-left: 300px;
+    margin-bottom: 140px;
+    border-radius: 30px;
+    border: 2px solid $blanco;
+    color: $blanco;
+    font-family: $font-B;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+    // overflow: hidden;
+  }
+  .seguir-comprando:hover {
+    background-color: rgba($color: $blanco, $alpha: 0.4);
+    color: $negro;
+    box-shadow: 0 0 10px $blanco, 0 0 20px $blanco, 0 0 40px $blanco;
+    transition: 1s;
+  }
+}
+
+footer {
+  @import "footer.scss";
+}
+
+.filtro {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  * {
+    body {
+      main {
+        //------------------------------------Renderizado de tarjetas------------------------------------------------
+        .articulo {
+          font-size: 0px;
+          margin-top: 2%;
+          margin-bottom: 2%;
+        }
+
+        .contenido-productoYagregados {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+
+          .general-A {
+            display: block;
+            background-color: $negro-agua;
+            width: 90%;
+            height: 50%;
+            background-color: rgb(157, 255, 127);
+
+            .productos {
+              background-color: orange;
+              display: flex;
+              flex-direction: column;
+              align-self: center;
+              align-items: center;
+
+              .h2-productos {
+                font-size: 10px;
+                padding-bottom: 10px;
+              }
+              .titulo-img {
+                padding-left: 20px;
+
+                width: 100%;
+              }
+            }
+            .span-precio {
+              color: $negro;
+              align-self: center;
+              font-size: 30px;
+            }
+            .img-producto {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border-radius: 25px;
+            }
+          }
+          .info-producto {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            padding: 10px;
+            text-align: center;
+            margin-top: 15px;
+          }
+          .cantidades {
+            background-color: aqua;
+            width: 90%;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+            .h2-special {
+              font-size: 25px;
+              margin-bottom: 20px;
+            }
+            .descripcion {
+              font-size: 20px;
+              text-align: center;
+            }
+            .sum-span-res {
+              display: flex;
+              i {
+                margin-top: 10px;
+                padding: 0px 10px;
+                cursor: pointer;
+              }
+
+              .cantidad-productos {
+                padding-bottom: 200px;
+                font-size: xx-large;
+              }
+            }
+          }
+          .precios {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0px;
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            align-self: center;
+            background-color: rebeccapurple;
+            .h2-special {
+              font-size: 25px;
+              margin-bottom: 40px;
+              text-align: center;
+            }
+            .monto {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .resultados {
+        width: 30%;
+        margin: 2%;
+        color: rgba($color: $blanco, $alpha: 0.8);
+        background-color: $negro-agua;
+        border-radius: 30px;
+        h2 {
+          padding: 2%;
+        }
+        p {
+          padding: 2% 0 3% 2%;
+        }
+      }
+    }
+  }
+  .seguir-comprando {
+    position: relative;
+    background-color: rgba($color: $amarillo, $alpha: 0.8);
+    padding: 15px 80px;
+    margin-top: 15px;
+    margin-left: 300px;
+    margin-bottom: 140px;
+    border-radius: 30px;
+    border: 2px solid $blanco;
+    color: $blanco;
+    font-family: $font-B;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .seguir-comprando:hover {
+    background-color: rgba($color: $blanco, $alpha: 0.4);
+    color: $negro;
+    box-shadow: 0 0 10px $blanco, 0 0 20px $blanco, 0 0 40px $blanco;
+    transition: 1s;
+  }
+}
