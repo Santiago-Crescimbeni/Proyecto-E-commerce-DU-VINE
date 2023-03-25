@@ -64,6 +64,7 @@
   background-color: transparent;
   width: 100%;
   height: 100%;
+  color: #ffffff;
 }
 * header div.cabezera form .contenedor-de-búsqueda ::-moz-placeholder {
   color: #ffffff;

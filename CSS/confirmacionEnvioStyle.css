@@ -70,6 +70,7 @@ body header div.cabezera form .contenedor-de-búsqueda input {
   background-color: transparent;
   width: 100%;
   height: 100%;
+  color: #ffffff;
 }
 body header div.cabezera form .contenedor-de-búsqueda ::-moz-placeholder {
   color: #ffffff;
