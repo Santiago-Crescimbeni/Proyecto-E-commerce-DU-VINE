@@ -159,7 +159,7 @@ renderizacionCarrito(objeto, nuevoTotal);
 
 if (objeto.length == 0) {
 setTimeout(() => {
-  location.replace("./carrito.html");
+  location.replace("./Carrito.html");
 }, 1000);
 }
 

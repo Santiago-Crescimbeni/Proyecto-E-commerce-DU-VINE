@@ -14,9 +14,7 @@ window.addEventListener("load", function () {
   const apellidoError = document.querySelector("#apellidoError");
   const emailError = document.querySelector("#emailError");
   const contraseniaError = document.querySelector("#passwordError");
-  const repetirContraseniaError = document.querySelector(
-    "#repetirPasswordError"
-  );
+  const repetirContraseniaError = document.querySelector("#repetirPasswordError");
 
   //-----------------------------------------------------------------------------------------
 
