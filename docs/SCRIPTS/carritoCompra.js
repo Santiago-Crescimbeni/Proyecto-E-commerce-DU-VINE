@@ -83,8 +83,8 @@ function renderizacionCarrito(objeto, total) {
     
   }
 
-  //--------------Captura boton "seguir Comprando y redirecciona"-----------------
-  // modal();
+ 
+
   }
 
 //--------------Renderiza todas las tarjetas con la infomacion de los productos seleccionados-----------------
@@ -204,7 +204,7 @@ BTNseguirComprando.addEventListener("click", function () {
 console.log(datos);
 setTimeout(() => {
 
-location.replace("./DateUnGustito.html");
+location.replace("./dateUnGustito.html");
 
   }, 1000);
 

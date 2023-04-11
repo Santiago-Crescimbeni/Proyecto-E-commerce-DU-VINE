@@ -75,13 +75,12 @@ window.addEventListener("load", function () {
                                     <div class="descripcion"> ${buscaVino.descripcion}</div>
                                 </div>
                             </div>
-                            <button class="carrito"> agregar al carroto <button>
+                            <button class="carrito"> agregar al carrito <button>
                         </div>
                     </li>
                 `;
     
-                // buscaVino.cantidad = 0;
-                // console.log(buscaVino)
+               
                 console.log(usuario)
                 let AggAlCarrito = tarjetas.querySelector(".carrito");
                 AggAlCarrito.addEventListener("click", () => {
@@ -103,7 +102,7 @@ window.addEventListener("load", function () {
     
                     localStorage.setItem("usuario", JSON.stringify(usuario));
                     console.log(usuario)
-                // }
+              
                 let cantidad = marcaIncrementoEnCarrito(usuario)
                 incrementosProductos.innerHTML =  cantidad;
                 });
