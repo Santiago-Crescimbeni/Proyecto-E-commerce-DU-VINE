@@ -237,6 +237,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  /* Model Container */
 }
 * body main h1 {
   background-color: rgba(0, 0, 0, 0.4117647059);
@@ -249,6 +250,159 @@
   padding-top: 2%;
   padding-bottom: 2%;
   cursor: none;
+}
+* body main .modal-conteiner {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body main .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+* body main .modal--show {
+  opacity: 1;
+  pointer-events: painted;
+}
+* body main .fadeIn {
+  animation: fadein 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+* body main label {
+  display: block;
+}
+* body main .model {
+  width: 900px;
+  height: 700px;
+  background: white;
+  /*   font-size: 0; */
+  color: white;
+  position: relative;
+  /*   animation: slideInFromLeft 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+  animation-fill-mode: forwards;
+}
+* body main .cerrar-modal {
+  position: absolute;
+  text-align: center;
+  /* padding-top: 3px; */
+  padding: 10px;
+  top: 0;
+  right: 1px;
+  cursor: pointer;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+* body main .room {
+  width: 50%;
+  height: 100%;
+  background: url(../IMA/BACKGROUND/pexels-cottonbro-studio-3171770\ 1.png) no-repeat center center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+* body main .text-cover {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+* body main .text-cover > * {
+  margin: 10px 0;
+}
+* body main .text-cover h1 {
+  font-size: 1.8rem;
+}
+* body main .text-cover .price {
+  color: #e67e22;
+}
+* body main .text-cover .price span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+* body main .payment {
+  width: 50%;
+  height: 100%;
+  color: #34495e;
+  display: inline-block;
+}
+* body main .formaDePago {
+  display: flex;
+  justify-content: space-between;
+}
+* body main .receipt-box {
+  padding: 20px 20px;
+  border-bottom: 1px solid #34495e;
+}
+* body main .receipt-box h3,
+* body main .payment-info h3 {
+  margin-bottom: 2rem;
+}
+* body main .payment-info {
+  padding: 20px;
+}
+* body main input[type=text] {
+  width: 100%;
+  padding: 8px 10px 10px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+* body main .btn {
+  padding: 15px 25px;
+  border: none;
+  color: white;
+  width: 100%;
+  display: block;
+  background-color: #CE8619;
+  text-transform: uppercase;
+  z-index: 99;
+  cursor: pointer;
+}
+* body main .table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+* body main .table td {
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0.25rem;
+  vertical-align: top;
+}
+* body main .table td:nth-child(2) {
+  text-align: right;
 }
 * body main .contendio-carrito {
   display: flex;
