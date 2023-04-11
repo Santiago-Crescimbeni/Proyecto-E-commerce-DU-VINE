@@ -1,8 +1,4 @@
 // SEGURIDAD: Si no se encuentra en localStorage info del usuario
-// no lo deja acceder a la página, redirigiendo al login inmediatamente.
-// if (localStorage.jwt) {
-//   location.replace('./index.html');
-// }
 
 /* ------ comienzan las funcionalidades una vez que carga el documento ------ */
 window.addEventListener('load', function () {
@@ -60,9 +56,6 @@ window.addEventListener('load', function () {
   }
 
  function loguearse(){
- 
-  // const nombreUsuario = document.querySelector("nombreUsuario")
-  // nombreUsuario.addEventListener("click", () => {alert("asdadasdasad")})
   
   const head = document.querySelector("head")
   const main = document.querySelector("main")

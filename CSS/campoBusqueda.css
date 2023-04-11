@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@100&display=swap");
 :root {
-  --burbuja-ancho: 64px;
+  --burbuja-ancho: 65px;
   --burbuja-icono-ancho: 32px;
   --burbuja-whastapp: #25d366;
   --burbuja-color: #fff;
@@ -357,6 +357,21 @@
 }
 * body main .contenido-productoYagregados .general-A .precios .monto {
   font-size: 30px;
+}
+* body main .contenido-productoYagregados .carrito {
+  position: relative;
+  background-color: rgba(206, 134, 25, 0.8);
+  padding: 3px 3px;
+  margin: 5px;
+  width: 15%;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
 }
 * body main .resultados {
   width: 30%;
