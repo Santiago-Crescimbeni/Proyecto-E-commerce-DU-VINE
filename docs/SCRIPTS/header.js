@@ -31,6 +31,27 @@ const headerFondo = document.querySelector("header");
   iconoBotellaEnMenu.addEventListener("click", function () {
     window.location.replace("./dateUnGustito.html");
   });
+
+//--------------Renderizacion de Modal.-------------------------------
+
+
+  const model = document.querySelector(".model")
+  iconoUsuarioEnMenu.addEventListener("click", function () {
+    
+    model.classList.add("model--show")
+  });
+ 
+  const model_close = document.querySelector('.fa-circle-xmark');
+            model_close.addEventListener("click", function (e) {
+              e.preventDefault();
+              setTimeout(() => {
+                model.classList.remove("model--show")
+                
+              }, 500);
+            })
+          
+          
+
   
   //-------- Seleccionamos etiqueta casa y agregamos redireccionamiento desde el menu con metodos de escucha--------
   const iconoCasaEnMenu=document.querySelector('.fa-house');

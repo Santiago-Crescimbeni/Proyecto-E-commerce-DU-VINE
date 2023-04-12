@@ -49,3 +49,4 @@ function arrayCarritoCompra() {
 arrCarritoCompra = arrayCarritoCompra();
 
 localStorage.setItem("usuario", JSON.stringify(arrCarritoCompra));
+

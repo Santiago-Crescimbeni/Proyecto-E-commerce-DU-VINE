@@ -2,10 +2,6 @@ window.addEventListener("load", function () {
   const usuario = recuperarDatosUsuario();
 
   renderizacionCarrito(usuario, sumarPrecios(usuario));
- 
-  
-  // datosDelModal(usuario, sumarPrecios(usuario));
- 
 
 });
 

@@ -110,6 +110,134 @@
 * header div.cabezera .fa-bottle-droplet {
   display: none;
 }
+* header .model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 99;
+  transition: 1s;
+  margin-top: 8.2%;
+}
+* header .model .form-login {
+  background-image: linear-gradient(-20deg, #fb576d 0%, #ff9a44 100%);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 16px;
+  border: 1px double rgba(0, 0, 0, 0.4117647059);
+  box-shadow: 6px 20px 20px 6px #000000;
+}
+* header .model .form-login .fa-circle-xmark {
+  position: absolute;
+  font-size: large;
+  color: #ffffff;
+  margin-left: 14%;
+  transition: all 1s;
+}
+* header .model .form-login .fa-circle-xmark:hover {
+  font-size: x-large;
+  color: #ffffff;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+* header .model .form-login .form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+* header .model .form-login .form-header h2 {
+  font-family: "Caveat", sans-serif;
+  font-size: 50px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+* header .model .form-login .form-header p {
+  padding: 10px 10px;
+  color: #ffffff;
+  font-size: 23px;
+}
+* header .model .form-login label {
+  margin-bottom: 5px;
+}
+* header .model .form-login input {
+  border-radius: 50px;
+  margin-bottom: 15px;
+  padding: 8px 30px;
+  border: 1px solid saddlebrown;
+}
+* header .model .form-login input:focus {
+  outline: none;
+  border: 2px solid #000000;
+}
+* header .model .form-login button {
+  font-family: "Cormorant Infant", serif;
+  color: #ffffff;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.4117647059);
+  padding: 0px 10px 0px 10px;
+  border-radius: 70px;
+  border-color: #ffffff;
+  cursor: pointer;
+  transition: all;
+  margin-top: 10px;
+}
+* header .model .form-login button:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  border-radius: 30px;
+}
+* header .model .ingresarA {
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 15%;
+}
+* header .model .ingresarA a {
+  color: #326bff;
+}
+* header .model .ingresarA a:hover {
+  color: #ffffff;
+  transition: 1s;
+}
+* header .model--show {
+  opacity: 1;
+  pointer-events: painted;
+}
+* header .model--show .fadeIn {
+  animation: fadein 10s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+* header .model--show label {
+  display: block;
+}
+* header .cerrar-model {
+  position: absolute;
+  text-align: center;
+  /* padding-top: 3px; */
+  padding: 10px;
+  top: 0;
+  right: 1px;
+  cursor: pointer;
+}
 @media (max-width: 480px) {
   * header div.cabezera {
     display: flex;
@@ -161,6 +289,13 @@
     color: #ce8619;
     transition: 2s;
     align-self: center;
+  }
+  * header .model .model-container {
+    margin: 10vw;
+    width: 90%;
+  }
+  * header .model .fa-circle-xmark {
+    right: 35px;
   }
   * header .headerFondoNegro {
     transition: 3s;

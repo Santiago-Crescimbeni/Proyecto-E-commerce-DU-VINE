@@ -85,7 +85,7 @@ label {
   position: relative;
 /*   animation: slideInFromLeft 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
   animation-fill-mode: forwards;
- 
+
 }
 
 .cerrar-modal {
@@ -450,6 +450,24 @@ input[type=text]{
 @media screen and (max-width: 480px) {
   body {
     main {
+      .modal{ 
+        width: 100%;
+        .modal-conteiner{width: 90%;
+      .model {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        .room{
+          display: none;
+        }
+        .payment{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
       margin-bottom: 50px;
 
       h1 {

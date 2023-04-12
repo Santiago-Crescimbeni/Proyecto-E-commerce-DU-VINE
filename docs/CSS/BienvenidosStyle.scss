@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
 
+
   body {
     background-image: url(../IMA/BACKGROUND/closeup-shot-of-green-grape-leaves-with-beautiful-green-landscape\ 1.png);
     background-repeat: no-repeat;
@@ -54,6 +55,8 @@
           transition: 600ms;
         }
       }
+     
+
     }
     footer {
       @import "footer.scss";
