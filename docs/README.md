@@ -1,14 +1,11 @@
 # Proyecto-E-commerce-DU-VINE--
-" Proyecto web de comercio electronico "
+"E-commerce web project"
 
-Bienvenido a nuestro proyecto de comercio electrónico de bebidas llamado DU VINE, hemos utilizado tecnologías modernas como HTML5, CSS3, SCSS y JavaScript para crear una experiencia de usuario atractiva y satisfactoria. Nuestra página es responsive y hemos implementado técnicas de UX/UI para mejorar la usabilidad y accesibilidad. Además, utilizamos Rest APIs y JWT para comunicarnos con nuestro servidor y autenticar a nuestros usuarios. Para el control de versiones, utilizamos Git y GitHub y seguimos la metodología Scrum y Kanban para cumplir con nuestros objetivos en tiempo y forma. En resumen, hemos creado una combinación de diseño atractivo, experiencia de usuario intuitiva y tecnologías modernas para brindar la mejor experiencia posible a nuestros usuarios en DU VINE
-
-
+Welcome to our beverage eCommerce project called DU VINE, we have used modern technologies like HTML5, CSS3, SCSS and JavaScript to create an engaging and satisfying user experience. Our page is responsive and we have implemented UX/UI techniques to improve usability and accessibility. Additionally, we use Rest APIs and JWTs to communicate with our server and authenticate our users. For version control, we use Git and GitHub and follow the Scrum and Kanban methodology to meet our objectives in a timely manner. In short, we have created a combination of attractive design, intuitive user experience and modern technologies to provide the best possible experience for our users on DU VINE.
 
 ![duvine](https://user-images.githubusercontent.com/91988840/232224774-88b99901-31a5-4c90-818e-a05f9e441b4e.gif)
 
-
-RESUMEN DE TECNOLOGÍAS Y CONOCIMIENTOS IMPLEMENTADO SOBRE ESTE PROYECTO:
+SUMMARY OF TECHNOLOGIES AND KNOWLEDGE IMPLEMENTED ON THIS PROJECT
 
 -HTML5
 -Css3
@@ -18,15 +15,14 @@ RESUMEN DE TECNOLOGÍAS Y CONOCIMIENTOS IMPLEMENTADO SOBRE ESTE PROYECTO:
 -JavaScript
 -Consultas a API
 -Rest APIs
--Validaciones
--Almacenamiento y utilización en Storage
--JWT
+-validations
+-Storage and use in Storage-JWT
 -JSON
 -Git / GitHub
--Metodología Scrum
+-Scrum Methodology
 -Kanban
 
-![Du vine](https://user-images.githubusercontent.com/91988840/232225126-1e103f34-2172-4c6b-8ea3-a0003e817784.png)
+
 
 
 
