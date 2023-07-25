@@ -13,7 +13,6 @@ SUMMARY OF TECHNOLOGIES AND KNOWLEDGE IMPLEMENTED ON THIS PROJECT
 -Responsive
 -UX/UI
 -JavaScript
--Consultas a API
 -Rest APIs
 -validations
 -Storage and use in Storage-JWT
