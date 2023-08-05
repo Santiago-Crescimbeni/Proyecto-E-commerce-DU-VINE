@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="hell">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Enologia</title>
+    
+    
+   
+    <link rel="stylesheet" href="./CSS/carritoDeCompra.css">
+   
+    <script src="https://kit.fontawesome.com/2c564250c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"></div>
+<main>
+    <section class="principal">
+  <!-- --------------Carrito Vacio------------>
+    <h1>Carrito de Compras</h1>
+        <div class="contendio-carrito">
+            <h2 class="carritoVacio">Tu carrito está vacio</h1>
+            <p class="queComprar">¿No sabés qué comprar? ¡Miles de productos te esperan!</p>
+            <button class="volverAComprar">Descubri estas ofertas</button>
+            <article class="renderizado-tarjetas"></article>
+        </div>
+    </section>
+    <seccion class= "modal">
+        <div class= "modal-conteiner">
+          <div class="model">
+            <div class="room">
+              <div class="text-cover">
+                <h1>Du Vine</h1>
+                <p id="precioTotal"></p>
+                <hr>
+                <p>Disfrute un buen vino hoy!</p>
+                <p id="fecha"> </p>
+              </div>
+            </div><div class="payment">
+            
+              <div class="receipt-box">
+                <h3>Resumen de pago</h3>
+                <table class="table">
+                  <tr>
+                    <td>Cantidad de botellas</td>
+                    <td id="cantBts">0</td>
+                  </tr>
+                  <tr>
+                    <td >Descuentos por cantidad</td>
+                    <td id="desc">0</td>
+                  </tr>
+                  <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotal"></td>
+                  </tr>
+                  <tr>
+                    <td>Impuesto nacional</td>
+                    <td id="Impuesto"></td>
+                  </tr>
+                  <tfoot>
+                    <tr>
+                      <td>Total a pagar</td>
+                      <td id="toalPagar"></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="payment-info">
+                <div class="formaDePago">
+                   <h3>Formas de pago</h3><img src="./IMA/Iconos/tarjeta-de-credito.png" alt="tarjeta-de-credito" width="50px">
+                </div>
+                   
+                <form id="myForm">
+                  <label>Nombre en la tarjeta</label>
+                  <i class="cerrar-modal fa-regular fa-circle-xmark"></i>
+                  <input type="text" name="nombre" placeholder="Mario Palacios">
+                  <label>Numero de la tarjeta</label>
+                  <input type="text" name="numeroTarjeta" placeholder="xxxx-xxx-xxx">
+                  <br><br>
+                  <button id="myButton" class="btn">Confirmar Compra</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+    </seccion>
+</main>
+
+<footer>
+    <div id="footer"></div>
+</footer>
+<script src="./SCRIPTS/header.js"></script>
+<script src="./SCRIPTS/carritoCompra.js"></script>
+<!-- <script src="./SCRIPTS/obtenerUsuario.js"></script> -->
+</body>
+</html>

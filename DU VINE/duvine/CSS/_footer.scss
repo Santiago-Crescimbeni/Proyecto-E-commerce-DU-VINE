@@ -1,0 +1,50 @@
+div {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $amarillo;
+      
+        a {
+          width: 5%;
+      
+          i {
+            font-size: xx-large;
+            margin: 10px 5px;
+            color: $blanco;
+          }
+          i:hover {
+            color: $negro;
+            transition: 600ms;
+          }
+        }
+      }
+      
+      //------------------Responsive-----------------------
+      @media (max-width: 480px) {
+        div {
+          display: flex;
+          justify-content: center;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: $amarillo;
+      
+          a {
+            width: 70px;
+      
+            i {
+              font-size: xx-large;
+              margin: 10px 5px;
+              color: $blanco;
+            }
+            i:hover {
+              color: $negro;
+              transition: 600ms;
+            }
+          }
+        }
+      }

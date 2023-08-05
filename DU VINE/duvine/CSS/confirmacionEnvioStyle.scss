@@ -1,0 +1,131 @@
+@import "colores.scss";
+@import "fuentes.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: url(../IMA/BACKGROUND/pexels-roland-dumke-943700\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  header {
+    @import "header.scss";
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    h1 {
+      background-color: $negro-agua;
+      border: 0.5px solid white;
+      color: $blanco;
+      text-align: center;
+      font-family: $font-A;
+      font-weight: 100;
+      font-size: 40px;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      cursor: none;
+      margin: 0;
+    }
+
+    .recuadro {
+      margin-top: 70px;
+      align-self: center;
+      border-radius: 25px;
+      border: 1px solid $blanco;
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      background-color: #00000099;
+      width: 40vw;
+
+      .fa-circle-check {
+        padding-top: 20px;
+        font-size: 150px;
+        color: rgba(101, 253, 0, 0.406);
+      }
+
+      h2 {
+        padding-top: 15px;
+        color: $blanco;
+        font-size: 30px;
+        margin: 0px;
+      }
+      h2:hover {
+        color: $amarillo;
+        transition: 1s;
+      }
+
+      .informacion {
+        width: 20vw;
+        color: $blanco;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+        margin: 0px;
+        font-family: Cormorant;
+      }
+
+      .salir {
+        background-color: rgba($color: $amarillo, $alpha: 0.8);
+        font-size: 20px;
+        color: $blanco;
+        padding: 8px;
+        border-radius: 30px;
+        width: 15vw;
+        border: 1px solid $blanco;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        transition: all;
+      }
+      .salir:hover {
+        color: $negro;
+        box-shadow: 0 0 10px $blanco, 0 0 20px $blanco, 0 0 40px $blanco;
+        transition: 1s;
+        background-color: rgba($color: $blanco, $alpha: 0.4);
+      }
+    }
+  }
+  footer {
+    @import "footer.scss";
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    height: 100vh;
+
+    main {
+      .recuadro {
+        margin: 8% 0 8vh 0;
+        width: 85vw;
+        .fa-circle-check {
+          padding-top: 20px;
+          font-size: 100px;
+        }
+
+        h2 {
+          padding-top: 10px;
+          font-size: 20px;
+          margin: 0px;
+        }
+
+        .informacion {
+          width: 80vw;
+          font-size: 20px;
+          line-height: 30px;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

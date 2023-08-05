@@ -1,0 +1,246 @@
+@import "colores.scss";
+@import "fuentes.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  body {
+    background-image: url('../IMA/BACKGROUND/pexels-pixabay-434311\ 1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: $font-A;
+    backdrop-filter: blur(1px);
+
+    header {
+      background-color: $negro-agua;
+      height: 160px;
+      margin-bottom: 50px;
+
+      nav {
+        padding: 16px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+          color: $blanco;
+          font-family: $font-C;
+          font-size: 70px;
+          margin-top: 10%;
+          cursor: pointer;
+        }
+        h2:hover {
+          color: $amarillo;
+          transition: 600ms;
+          font-size: 68px;
+        }
+
+        img {
+          margin-top: 15%;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: 3px double $blanco;
+        }
+        img:hover {
+          width: 200px;
+          height: 200px;
+          transition: 1s;
+        }
+      }
+    }
+
+    .container {
+      padding: 0 5%;
+      form {
+        background: linear-gradient(
+          rgb(163, 84, 4),
+          rgb(100, 56, 13),
+          rgb(163, 84, 4)
+        );
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px 70px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        color: $blanco;
+        font-size: 16px;
+        border: 10px double $negro-agua;
+
+        .form-header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 5%;
+
+          h2 {
+            margin-bottom: 5px;
+            color: $blanco;
+            font-size: 45px;
+          }
+
+          p {
+            padding: 10px 10px;
+            color: $blanco;
+            font-size: 30px;
+          }
+        }
+        label {
+          margin-bottom: 5px;
+          font-size: 25px;
+        }
+
+        input {
+          border-radius: 50px;
+          margin-bottom: 5px;
+          padding: 7px 13px;
+          border: 2px solid $negro;
+        }
+        .error {
+          color: $naranja;
+          font-size: 17px;
+          font-weight: bolder;
+          margin-bottom: 10px;
+        }
+
+        input:focus {
+          outline: none;
+          border: 2px solid $negro;
+        }
+        button {
+          background-color: $verde-agua;
+          color: white;
+          padding: 10px 0;
+          border-radius: 15px;
+          font-size: 20px;
+          font-weight: 400px;
+          font-family: $font-A;
+        }
+        button:hover {
+          background-color: $verde-agua;
+          transition: 1s;
+          border-radius: 30px;
+        }
+      }
+    }
+    .ingresarA {
+      text-align: center;
+      font-size: x-large;
+      a {
+        color: white;
+      }
+      a:hover {
+        color: lightblue;
+      }
+    }
+  }
+}
+
+//---------------------------------Responsive----------------------------------
+
+@media screen and (max-width: 480px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+    header {
+      background-color: $negro-agua;
+      height: 17%;
+      margin-bottom: 1%;
+
+      nav {
+        padding: 16px;
+        h2 {
+          font-size: 4em;
+          margin-top: 0%;
+          cursor: pointer;
+        }
+        h2:hover {
+          color: $blanco;
+          transition: 0ms;
+          font-size: 50px;
+        }
+
+        img {
+          margin-top: 0%;
+          width: 100px;
+          height: 100px;
+        }
+        img:hover {
+          width: 100px;
+          height: 100px;
+          transition: 0s;
+        }
+      }
+    }
+    .container {
+      align-content: center;
+      padding: 0%;
+      margin-top: 0;
+
+      form {
+        background: linear-gradient(
+          rgb(163, 84, 4),
+          rgb(100, 56, 13),
+          rgb(163, 84, 4)
+        );
+
+        width: 95%;
+        border-radius: 30px;
+        font-size: 1em;
+        border: 10px double $negro-agua;
+        padding: 10px 30px;
+        text-align: center;
+
+        .form-header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 5%;
+
+          h2 {
+            display: none;
+          }
+
+          p {
+            padding: 0px 0px;
+            color: $blanco;
+            font-size: 20px;
+          }
+        }
+
+        label {
+          margin-bottom: 5px;
+          font-size: 18px;
+        }
+
+        input {
+          width: 100%;
+          border-radius: 50px;
+          margin-bottom: 5px;
+          padding: 7px 13px;
+          border: 2px solid $negro;
+        }
+        .error {
+          color: $naranja;
+          font-size: 17px;
+          font-weight: bolder;
+          margin-bottom: 10px;
+        }
+      }
+      .ingresarA {
+        text-align: center;
+        font-size: x-large;
+        margin: auto;
+      }
+    }
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
